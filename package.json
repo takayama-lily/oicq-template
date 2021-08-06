@@ -1,0 +1,17 @@
+{
+  "name": "oicq-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node ./index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "oicq": "^1.18.3"
+  },
+  "devDependencies": {
+    "@types/node": "^16.4.13"
+  }
+}

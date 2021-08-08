@@ -11,7 +11,7 @@ bot.on("request.friend.add", async function (e) {
 })
 
 // 收到群邀请
-bot.on("request.group.invite", function (e) {
+bot.on("request.group.invite", async function (e) {
 	// 同意
 	await this.setGroupAddRequest(e.flag)
 	this.sendGroupMsg(e.group_id, "大家好，我是" + this.nickname)

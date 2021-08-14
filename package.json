@@ -9,7 +9,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "oicq": "^1.18.3"
+    "oicq": "^1.19.1"
   },
   "devDependencies": {
     "@types/node": "^16.4.13"

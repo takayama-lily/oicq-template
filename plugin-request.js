@@ -5,7 +5,7 @@ const { bot } = require("./index")
 bot.on("request.friend.add", async function (e) {
 	// 同意
 	await this.setFriendAddRequest(e.flag)
-	this.sendPrivateMsg("我们已经是好友啦，一起来聊天吧！")
+	this.sendPrivateMsg(e.user_id, "我们已经是好友啦，一起来聊天吧！")
 	// 拒绝
 	// this.setFriendAddRequest(e.flag, false)
 })

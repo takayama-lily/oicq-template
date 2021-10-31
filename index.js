@@ -1,16 +1,19 @@
 "use strict"
+const { createClient, LoginErrorCode } = require("oicq")
+
 const account = 0
 
-const bot = require("oicq").createClient(account)
+const bot = createClient(account)
 
-bot.on("system.login.qrcode", function (e) {
-	this.logger.mark("扫码后按Enter完成登录") //通过扫码二维码登录
+bot
+.on("system.login.qrcode", function (e) {
+	this.logger.mark("扫码后按Enter完成登录")
 	process.stdin.once("data", () => {
 		this.login()
 	})
 })
 .on("system.login.error", function (e) {
-	if (e.code < 0)
+	if (e.code === LoginErrorCode.ScanTimeout)
 		this.login()
 })
 .login()
@@ -22,3 +25,7 @@ require("./plugin-hello") //hello world
 require("./plugin-image") //发送图文和表情
 require("./plugin-request") //加群和好友
 require("./plugin-online") //监听上线事件
+
+process.on("unhandledRejection", (reason, promise) => {
+	console.log('Unhandled Rejection at:', promise, 'reason:', reason)
+})

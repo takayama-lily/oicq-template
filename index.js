@@ -1,5 +1,5 @@
 "use strict"
-const { createClient, LoginErrorCode } = require("oicq")
+const { createClient } = require("oicq")
 
 const account = 0
 
@@ -11,10 +11,6 @@ bot
 	process.stdin.once("data", () => {
 		this.login()
 	})
-})
-.on("system.login.error", function (e) {
-	if (e.code === LoginErrorCode.ScanTimeout)
-		this.login()
 })
 .login()
 

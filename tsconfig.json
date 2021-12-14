@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "ES5",
+    "outDir": "./dist",
+    "allowJs": true,
+    "incremental": true,
+    "allowUnreachableCode": true,
+    "skipLibCheck": true,
+    "noUnusedParameters": false,
+    "noUnusedLocals": false
+  },
+  "include": [
+    "./src"
+  ]
+}

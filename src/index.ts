@@ -22,7 +22,7 @@ bot
   .login();
 
 // 取消注释引入相应功能
-import './plugin-hello'; //hello world
+import './plugin-hello.js'; //hello world
 // import './plugin-image'; //发送图文和表情
 // import './plugin-request'; //加群和好友
 // import './plugin-online'; //监听上线事件

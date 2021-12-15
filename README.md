@@ -43,3 +43,11 @@
 [^1]: 建议使用 **pm2** 部署你的项目
   [PM2官方文档](https://pm2.keymetrics.io/docs/usage/quick-start/)
   [PM2中文文档](https://wohugb.gitbooks.io/pm2/content/)
+
+----
+
+> 如果你是初学者，建议通过下面的资料提升自己：  
+[5分钟上手TypeScript](https://www.tslang.cn/docs/handbook/typescript-in-5-minutes.html)  
+[JavaScript语言基础](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript) / [现代JavaScript教程](https://zh.javascript.info)  
+[Node.js入门教程](http://nodejs.cn/learn)  
+[优秀npm三方库集合](https://github.com/sindresorhus/awesome-nodejs)  
